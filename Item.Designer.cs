@@ -35,7 +35,7 @@
             // openProjectButton
             // 
             this.openProjectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.openProjectButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.openProjectButton.ForeColor = System.Drawing.Color.Aqua;
             this.openProjectButton.Location = new System.Drawing.Point(14, 14);
             this.openProjectButton.Name = "openProjectButton";
             this.openProjectButton.Size = new System.Drawing.Size(170, 170);
@@ -48,7 +48,7 @@
             // 
             this.SetProjectButton.BackColor = System.Drawing.Color.Teal;
             this.SetProjectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.SetProjectButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.SetProjectButton.ForeColor = System.Drawing.Color.Aqua;
             this.SetProjectButton.Location = new System.Drawing.Point(158, 14);
             this.SetProjectButton.Name = "SetProjectButton";
             this.SetProjectButton.Size = new System.Drawing.Size(26, 27);

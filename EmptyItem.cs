@@ -20,12 +20,11 @@ namespace Developer_Assistant
 
         private void AddNewItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                Item newItem = new Item(Parent);
-                Parent.Controls.SetChildIndex(newItem, 0);
-            }
+            Item newItem = new Item(Parent, Main.softwareItems.Count);
+            Parent.Controls.SetChildIndex(newItem, 0);
+            Main.softwareItems.Add(newItem);
+            Main.softwareItemsData.Add(newItem.itemData);
+            newItem.SetUpItem(sender, e);
         }
     }
 }

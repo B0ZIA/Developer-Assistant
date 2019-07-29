@@ -59,7 +59,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.welcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.welcome.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcome.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.welcome.ForeColor = System.Drawing.Color.White;
             this.welcome.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.welcome.Location = new System.Drawing.Point(-1, 0);
             this.welcome.Name = "welcome";
@@ -71,7 +71,7 @@
             // hardwareButton
             // 
             this.hardwareButton.BackColor = System.Drawing.Color.Teal;
-            this.hardwareButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hardwareButton.ForeColor = System.Drawing.Color.White;
             this.hardwareButton.Location = new System.Drawing.Point(493, 3);
             this.hardwareButton.Name = "hardwareButton";
             this.hardwareButton.Size = new System.Drawing.Size(239, 60);
@@ -83,7 +83,7 @@
             // softwareButton
             // 
             this.softwareButton.BackColor = System.Drawing.Color.Teal;
-            this.softwareButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.softwareButton.ForeColor = System.Drawing.Color.White;
             this.softwareButton.Location = new System.Drawing.Point(248, 3);
             this.softwareButton.Name = "softwareButton";
             this.softwareButton.Size = new System.Drawing.Size(239, 60);
@@ -95,7 +95,7 @@
             // setingsButton
             // 
             this.setingsButton.BackColor = System.Drawing.Color.Teal;
-            this.setingsButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.setingsButton.ForeColor = System.Drawing.Color.White;
             this.setingsButton.Location = new System.Drawing.Point(738, 3);
             this.setingsButton.Name = "setingsButton";
             this.setingsButton.Size = new System.Drawing.Size(237, 60);
@@ -107,7 +107,7 @@
             // timerButton
             // 
             this.timerButton.BackColor = System.Drawing.Color.Teal;
-            this.timerButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.timerButton.ForeColor = System.Drawing.Color.White;
             this.timerButton.Location = new System.Drawing.Point(3, 3);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(239, 60);

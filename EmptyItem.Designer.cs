@@ -35,7 +35,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.ForeColor = System.Drawing.Color.Aqua;
             this.button1.Location = new System.Drawing.Point(14, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 170);

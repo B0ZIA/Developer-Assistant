@@ -7,24 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Developer_Assistant
 {
     public partial class Item : UserControl
     {
-        private List<string> pathToFiles = new List<string>();
-
-        public Item(Control parent)
-        {
-            InitializeComponent();
-            Parent = parent;
-            SetUpItem(openProjectButton, EventArgs.Empty);
+        public ItemData itemData;
+        public string ProjectName
+        { get { return itemData.projectName; }
+          set { SetProjectName(value); itemData.projectName = value; }
         }
 
-        private void SetUpItem(object sender, EventArgs e)
+
+        public Item(Control parent, int ID)
+        {
+            itemData = new ItemData();
+            InitializeComponent();
+            Parent = parent;
+            itemData.ID = ID;
+        }
+
+        public void SetUpItem(object sender, EventArgs e)
         {
             //Otwiera nowe okno setupu
-            ItemSetting itemSetting = new ItemSetting();
+            ItemSetting itemSetting = new ItemSetting(itemData.ID);
             itemSetting.StartPosition = FormStartPosition.CenterScreen;
             itemSetting.ShowDialog();
             //Ustawia texture
@@ -35,6 +42,15 @@ namespace Developer_Assistant
         private void OpenProject(object sender, EventArgs e)
         {
             //Otwiera pliki które są gdześ w tablicy 
+            for (int i = 0; i < itemData.pathsToFile.Count; i++)
+            {
+                Process.Start(itemData.pathsToFile[i]);
+            }
+        }
+
+        public void SetProjectName(string name)
+        {
+            openProjectButton.Text = "Open " + name;
         }
     }
 }
